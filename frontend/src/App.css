@@ -1,0 +1,152 @@
+/* App.css */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Allows scrolling if content exceeds viewport height */
+}
+
+section {
+  padding: 20px;
+  margin: 10px 0;
+  height: 100vh; /* Each section will take up full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hero, .Medical, .Product, .Wheel, .Solutions, .Accuracy, .Aiworks, .Section1, .Aiworks2, .Section2, .Aiworks3, .Section3, .Contact {
+  background-color: #f4f4f4; /* Light gray background */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Wheel section */
+.wheel-container {
+  position: relative;
+  width: 100%;
+  height: 500px; /* The height of the wheel section */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #E6E6E6, #d4d3d3, #B6BCC8);
+  border-radius: 20px; /* Optional: rounded corners */
+}
+
+.center-image {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.center-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.segment {
+  position: absolute;
+  width: 150px; /* Adjusted width for better fitting */
+  height: 120px; /* Adjusted height */
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px; /* Slightly rounded corners */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.segment h3 {
+  margin-bottom: 8px;
+}
+
+.segment p {
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+/* Adjusting positions of the segments */
+.top-left {
+  top: 40px;
+  left: 50px;
+  transform: rotate(-30deg);
+}
+
+.top-right {
+  top: 40px;
+  right: 50px;
+  transform: rotate(30deg);
+}
+
+.bottom-left {
+  bottom: 40px;
+  left: 50px;
+  transform: rotate(30deg);
+}
+
+.bottom-right {
+  bottom: 40px;
+  right: 50px;
+  transform: rotate(-30deg);
+}
+
+/* Additional sections styles */
+.Hero {
+  background-color: #ff6347;
+}
+
+.Medical {
+  background-color: #ffa500;
+}
+
+.Product {
+  background-color: #f0e68c;
+}
+
+.Wheel {
+  background-color: #98fb98;
+}
+
+.Solutions {
+  background-color: #add8e6;
+}
+
+.Accuracy {
+  background-color: #f0f8ff;
+}
+
+.Aiworks {
+  background-color: #d3d3d3;
+}
+
+.Section1 {
+  background-color: #ffb6c1;
+}
+
+.Section2 {
+  background-color: #ffe4e1;
+}
+
+.Section3 {
+  background-color: #ffdab9;
+}
+
+.Contact {
+  background-color: #fffacd;
+}
+
+/* Optional: If you want to apply smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}

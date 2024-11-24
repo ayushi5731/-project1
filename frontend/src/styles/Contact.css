@@ -1,0 +1,96 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to right, #e6e6e6, #d4d3d3, #b6bcc8); /* Gray background for the whole screen */
+    display: flex;
+    justify-content: center; /* Centers the form horizontally */
+    align-items: center; /* Centers the form vertically */
+  }
+.contact-form-container {
+    background: transparent;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 600px; /* Keeps the form responsive */
+    width: 100%; /* Ensures full width for smaller devices */
+    margin: 100px auto; /* Centers the form and adds spacing from top */
+    text-align: center;
+    /* box-shadow: 0 2px 10px grey; */
+    transition: all 1s linear;
+    
+  }
+  
+  .contact-form-container:hover{
+    box-shadow: 0 7px 20px grey;
+  }
+  .contact-form-container h2 {
+    font-size: 2rem;
+    color: #4b4b4b;
+    margin-bottom: 10px;
+  }
+  /* .main{
+    height:500px;
+    width:100%;
+    background-color: black;
+  } */
+  .contact-form-container p {
+    font-size: 1rem;
+    color: #6b6b6b;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Centers the form fields */
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; /* Ensures form fields span the full container width */
+    max-width: 500px; /* Adds responsiveness for larger devices */
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    color: #4b4b4b;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%; /* Full width for input fields */
+    padding: 10px;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #ffffff;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border: 1px solid #6b2fac;
+    box-shadow: 0 0 5px rgba(107, 47, 172, 0.5);
+  }
+  
+  .btn-primary {
+    padding: 10px 20px;
+    background-color: #6b2fac;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    max-width: 150px;
+    width: 100%; /* Adjust the button width for smaller screens */
+  }
+  
+  .btn-primary:hover {
+    background-color: #551d92;
+  }
+  

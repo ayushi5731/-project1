@@ -1,0 +1,58 @@
+.medical-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background: linear-gradient(to right,#E6E6E6 ,#d4d3d3,#B6BCC8);
+    border-radius: 10px;
+    padding-left: 30px;
+  }
+  
+  .medical-content {
+    max-width: 50%;
+    margin-left:20px;
+  }
+  
+  .medical-content h1 {
+    font-size: 2rem;
+    color: #4b4b4b;
+    margin-bottom: 20px;
+    margin-left:20px;
+ 
+  }
+  
+  .medical-content p {
+    font-size: 1rem;
+    color: #6b6b6b;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-left:20px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background-color: #6b2fac;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 20px;
+  }
+  
+  .cta-button:hover {
+    background-color: #551d92;
+  }
+  
+  .medical-image img {
+    width: 30rem;
+    height: 27rem;
+    border-top-right-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-right:40px;
+  }
+  
+
+
+
+

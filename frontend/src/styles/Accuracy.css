@@ -1,0 +1,34 @@
+.benefits-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: linear-gradient(to right,#E6E6E6 ,#d4d3d3,#B6BCC8);
+    padding: 30px 40px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .benefit {
+    text-align: center;
+    width: 30%;
+  }
+  
+  .percentage {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:#a458c6;
+    margin-bottom: 10px;
+  }
+  
+  .benefit h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .benefit p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  

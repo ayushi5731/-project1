@@ -1,0 +1,81 @@
+.how-it-works {
+    padding: 40px 20px;
+    background: linear-gradient(to right,#E6E6E6 ,#d4d3d3,#B6BCC8);
+    border-radius: 8px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .work-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .content {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    flex: 1;
+  }
+
+  .icon-container .circle {
+    position: relative;
+    width: 90px; /* Total size including border */
+    height: 90px;
+    background: linear-gradient(145deg, #a75dc9, #b394c1, #b9b0bd); /* Gradient for border */
+    border-radius: 50%; /* Make it a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon-container .circle::before {
+    content: '';
+    position: absolute;
+    width: 50px; /* Inner circle size */
+    height: 50px;
+    background: white; /* Background of the inner circle */
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .number {
+    position: relative; /* Ensure it’s above the ::before */
+    z-index: 2; /* Higher than ::before */
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+  }
+  
+  
+  .text-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .dashboard-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
