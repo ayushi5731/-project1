@@ -1,35 +1,35 @@
 .outer {
-    display: flex; /* Ensures that .inner divs are aligned horizontally */
-    gap: 140px; /* Adds spacing between .inner divs */
+    display: flex; 
+    gap: 140px; 
     justify-content: space-around;
     background: linear-gradient(to right,#E6E6E6 ,#d4d3d3,#B6BCC8);
-    /* background-color:black; */
+  
    
   }
   
   .inner {
-    display: flex; /* Enables Flexbox layout within .inner div */
-    flex-direction: column; /* Aligns child elements (h4 and p) horizontally */
-    align-items: center; /* Vertically centers the elements */
-    justify-content: space-around; /* Aligns items to the start of the container */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-around; 
     height: 200px;
-    width: 200px; /* Increased width to fit the content */
-    padding: 10px; /* Adds some padding inside the box */
+    width: 200px; 
+    padding: 10px; 
     border-radius: 8px;
-    /* background-color: black; */
+  
     background-color: transparent;
   }
   
   h5 {
-    margin: 0; /* Removes default margin */
-    margin-right: 10px; /* Adds spacing between the heading and paragraph */
+    margin: 0; 
+    margin-right: 10px; 
     font-size: 1.2rem;
     color: #333;
     margin-bottom:7px;
   }
   
   p {
-    margin: 3px; /* Removes default margin */
+    margin: 3px; 
     font-size: 0.9rem;
     color: #666;
   }
