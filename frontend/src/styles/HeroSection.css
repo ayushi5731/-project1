@@ -14,8 +14,7 @@
   z-index: 1000;
   width:100%;
   height:80px;
-  /* margin-bottom: 10px; */
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+ 
 }
 
 .logo {
@@ -134,9 +133,9 @@
 
 /* Section Spacing and Visibility */
 section {
-  padding: 100px 20px; /* Ensure enough padding around each section */
-  scroll-margin-top: 80px; /* Adjust for sticky navbar height */
-  border-bottom: 1px solid #ddd; /* Optional: Visual separation */
+  padding: 100px 20px; 
+  scroll-margin-top: 80px;
+  border-bottom: 1px solid #ddd; 
 }
 
 /* Divider Styling */
