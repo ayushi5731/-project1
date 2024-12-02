@@ -28,13 +28,13 @@ section {
 .wheel-container {
   position: relative;
   width: 100%;
-  height: 500px; /* The height of the wheel section */
+  height: 500px; 
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(to right, #E6E6E6, #d4d3d3, #B6BCC8);
-  border-radius: 20px; /* Optional: rounded corners */
+  border-radius: 20px; 
 }
 
 .center-image {
@@ -54,11 +54,11 @@ section {
 
 .segment {
   position: absolute;
-  width: 150px; /* Adjusted width for better fitting */
-  height: 120px; /* Adjusted height */
+  width: 150px; 
+  height: 120px; 
   padding: 10px;
   text-align: center;
-  border-radius: 15px; /* Slightly rounded corners */
+  border-radius: 15px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -146,7 +146,6 @@ section {
   background-color: #fffacd;
 }
 
-/* Optional: If you want to apply smooth scrolling behavior */
 html {
   scroll-behavior: smooth;
 }
