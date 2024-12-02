@@ -1,24 +1,27 @@
 import React from "react";
 import "../styles/HeroSection.css";
 
+
 function Hero() {
   return (
     <div className="hero-section">
       <nav className="navbar">
         <div className="logo">
-          <img src="/images/logo.png" alt="Logo" className="logoImg" />
+          <div className="imgg">
+              <img src="/images/logo.png" alt="Logo" className="logoImg" />
+          </div>
           <div>
-            <span className="brand-name">RADPRETATION</span>
-            <small className="brand-tagline">IMAGING SIMPLIFIED</small>
+            <h6 className="brand-tagline">IMAGING SIMPLIFIED</h6>
           </div>
         </div>
         <div className="menu">
           <a href="#home">Home</a>
           <a href="#product">Products</a>
-          <a href="#solutions">Solutions</a>
+          <a href="#Solutions">Solutions</a>
           <a href="#Contact">Contact</a>
         </div>
       </nav>
+
       <div className="hero-content">
         <div className="hero-text">
           <h1>Transform Radiology Workflows with AI-Powered Intelligence</h1>

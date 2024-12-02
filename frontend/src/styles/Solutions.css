@@ -1,55 +1,139 @@
+/* General Styles */
 .advanced-tech {
-    padding: 20px 40px;
-    background: linear-gradient(to right,#E6E6E6 ,#d4d3d3,#B6BCC8);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top:100px;
+  padding: 20px 40px;
+  background: linear-gradient(to right, #E6E6E6, #d4d3d3, #B6BCC8);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tech-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tech-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.icon-container {
+  min-width: 50px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Ensures heading is above paragraph */
+}
+
+.content h3 {
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-left: 30px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 15px 0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium Screens (Tablets and below) */
+@media (max-width: 768px) {
+  .advanced-tech {
+    padding: 20px 30px;
+    margin-top: 50px;
   }
-  
+
   .title {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 1.2rem;
   }
-  
-  .tech-section {
-    display: flex;
-    flex-direction: column;
+
+  .tech-item {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
     gap: 20px;
   }
-  
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 0;
+  }
+
+  .content h3 {
+    font-size: 1rem;
+    margin-left: 20%;
+    text-align: center; /* Center-align the heading on smaller screens */
+  }
+
+  .content p {
+    margin-left: 20%;
+    text-align: justify;
+    font-size: 1rem;
+    width: 70%;
+  }
+}
+
+/* Small Screens (Mobile and below) */
+@media (max-width: 480px) {
+  .advanced-tech {
+    padding: 15px 20px;
+    margin-top: 30px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
   .tech-item {
-    display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     gap: 15px;
   }
-  
-  .icon-container {
-    min-width: 50px;
-  }
-  
+
   .icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 0;
   }
-  
+
   .content h3 {
-    font-size: 1.2rem;
-    color:black;
-    margin-bottom: 10px;
-  }
-  
-  .content p {
     font-size: 1rem;
-    color: #555;
-    line-height: 1.5;
+    margin-left: 0;
+    text-align: center;
   }
-  
-  .divider {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 15px 0;
+
+  .content p {
+    font-size: 0.85rem;
+    margin-left: 0;
+    text-align: center;
   }
-  
+}

@@ -1,81 +1,80 @@
 .how-it-works {
-    padding: 40px 20px;
-    background: linear-gradient(to right,#E6E6E6 ,#d4d3d3,#B6BCC8);
-    border-radius: 8px;
-  }
-  
-  .section-title {
-    text-align: center;
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 30px;
-  }
-  
-  .work-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .content {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    flex: 1;
-  }
+  padding: 60px 40px; /* Adjust padding for more spacing */
+  background: linear-gradient(to right, #e6e6e6, #d4d3d3, #b6bcc8);
+  border-radius: 8px;
+}
 
-  .icon-container .circle {
-    position: relative;
-    width: 90px; /* Total size including border */
-    height: 90px;
-    background: linear-gradient(145deg, #a75dc9, #b394c1, #b9b0bd); /* Gradient for border */
-    border-radius: 50%; /* Make it a circle */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .icon-container .circle::before {
-    content: '';
-    position: absolute;
-    width: 50px; /* Inner circle size */
-    height: 50px;
-    background: white; /* Background of the inner circle */
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  .number {
-    position: relative; /* Ensure it’s above the ::before */
-    z-index: 2; /* Higher than ::before */
-    font-size: 1.4rem;
-    color: black;
-    font-weight: bold;
-  }
-  
-  
-  .text-content h3 {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 5px;
-  }
-  
-  .text-content p {
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  .image-container {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .dashboard-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
+.section-title {
+  text-align: center;
+  font-size: 2rem; /* Larger title */
+  color: #333;
+  margin-bottom: 40px; /* Increased margin for better spacing */
+}
+
+.work-item {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between;
+  gap: 40px; /* More spacing between content and image */
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* Increased gap for better separation */
+  flex: 1;
+}
+
+.icon-container .circle {
+  position: relative;
+  width: 100px; /* Slightly larger size */
+  height: 100px;
+  background: linear-gradient(145deg, #a75dc9, #b394c1, #b9b0bd); /* Gradient for border */
+  border-radius: 50%; /* Make it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container .circle::before {
+  content: '';
+  position: absolute;
+  width: 60px; /* Slightly larger inner circle */
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.number {
+  position: relative;
+  z-index: 2;
+  font-size: 1.5rem; /* Larger number font */
+  color: black;
+  font-weight: bold;
+}
+
+.text-content h3 {
+  font-size: 1.4rem; /* Larger text */
+  color: #333;
+  margin-bottom: 10px; /* Increased margin for better spacing */
+}
+
+.text-content p {
+  font-size: 1.1rem; /* Slightly larger paragraph text */
+  color: #555;
+  line-height: 1.6; /* Improved readability */
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dashboard-image {
+  max-width: 90%; /* Slightly smaller width for proper alignment */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Increased shadow for more emphasis */
+}
