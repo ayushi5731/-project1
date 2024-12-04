@@ -8,7 +8,7 @@ function Aiworks() {
       <h2 className="section-title">Here’s how radpretation.ai works</h2>
       
       <div className="work-item">
-        <div className="content">
+        <div className="Content">
           <div className="icon-container">
             <div className="circle">
               <span className="number">1</span>
@@ -22,7 +22,6 @@ function Aiworks() {
 
         <div className="image-container">
           <img
-            // src="images/dog.jpg" // Replace with the actual dashboard image URL
             src="/images/sectionImg1.jpg" 
             alt="Radiology Dashboard"
             className="dashboard-image"

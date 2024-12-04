@@ -23,7 +23,7 @@
 .tech-item {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 50px;
 }
 
 .icon-container {

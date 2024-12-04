@@ -13,7 +13,7 @@ function Solutions() {
         <div className="tech-item">
           <div className="icon-container">
             <img
-              src="/images/circle1.png" // Replace with your icon URL
+              src="/images/circle1.png" 
               alt="Vision Transformer Icon"
               className="icon"
             />
@@ -37,7 +37,7 @@ function Solutions() {
         <div className="tech-item">
           <div className="icon-container">
             <img
-              src="/images/circle2.png" // Replace with your icon URL
+              src="/images/circle2.png" 
               alt="SegFormer Icon"
               className="icon"
             />
@@ -61,7 +61,7 @@ function Solutions() {
         <div className="tech-item">
           <div className="icon-container">
             <img
-              src="/images/circle3.png" // Replace with your icon URL
+              src="/images/circle3.png"
               alt="Custom Workflows Icon"
               className="icon"
             />

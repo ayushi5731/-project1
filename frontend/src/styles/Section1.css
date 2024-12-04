@@ -1,10 +1,8 @@
 .outer {
     display: flex; 
-    gap: 140px; 
-    justify-content: space-around;
+    /* gap: px;  */
+    justify-content: space-evenly;
     background: linear-gradient(to right,#E6E6E6 ,#d4d3d3,#B6BCC8);
-  
-   
   }
   
   .inner {
@@ -16,7 +14,6 @@
     width: 200px; 
     padding: 10px; 
     border-radius: 8px;
-  
     background-color: transparent;
   }
   

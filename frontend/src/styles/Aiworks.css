@@ -1,5 +1,5 @@
 .how-it-works {
-  padding: 60px 40px; /* Adjust padding for more spacing */
+  padding: 60px 70px; /* Adjust padding for more spacing */
   background: linear-gradient(to right, #e6e6e6, #d4d3d3, #b6bcc8);
   border-radius: 8px;
 }
@@ -14,23 +14,23 @@
 .work-item {
   display: flex;
   align-items: flex-start; /* Align items to the top */
-  justify-content: space-between;
-  gap: 40px; /* More spacing between content and image */
+  justify-content: space-around;
+  gap:50px; /* More spacing between content and image */
 }
 
-.content {
+.Content {
   display: flex;
   align-items: flex-start;
-  gap: 20px; /* Increased gap for better separation */
-  flex: 1;
+  gap: 20px; 
+  flex: 1 ;
 }
 
 .icon-container .circle {
   position: relative;
   width: 100px; /* Slightly larger size */
   height: 100px;
-  background: linear-gradient(145deg, #a75dc9, #b394c1, #b9b0bd); /* Gradient for border */
-  border-radius: 50%; /* Make it a circle */
+  background: linear-gradient(145deg, #a75dc9, #b394c1, #b9b0bd);
+  border-radius: 50%; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,3 +78,4 @@
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Increased shadow for more emphasis */
 }
+

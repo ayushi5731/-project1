@@ -8,7 +8,7 @@ function Aiworks() {
       {/* <h2 className="section-title">Here’s how radpretation.ai works</h2> */}
       
       <div className="work-item">
-        <div className="content">
+        <div className="Content">
           <div className="icon-container">
             <div className="circle">
               <span className="number">3</span>
