@@ -1,12 +1,9 @@
 import React from "react";
 import "../styles/Aiworks.css";
 
-
 function Aiworks() {
   return (
     <div className="how-it-works">
-      {/* <h2 className="section-title">Here’s how radpretation.ai works</h2> */}
-      
       <div className="work-item">
         <div className="Content">
           <div className="icon-container">
@@ -22,12 +19,10 @@ function Aiworks() {
 
         <div className="image-container">
           <img
-            
             src="/images/sectionImg3.jpg" 
             alt="Radiology Dashboard"
             className="dashboard-image"
           />
-         
         </div>
       </div>
     </div>

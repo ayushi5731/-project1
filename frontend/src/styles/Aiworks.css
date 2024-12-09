@@ -1,81 +1,134 @@
 .how-it-works {
-  padding: 60px 70px; /* Adjust padding for more spacing */
+  padding: 3rem 2rem;
   background: linear-gradient(to right, #e6e6e6, #d4d3d3, #b6bcc8);
   border-radius: 8px;
-}
-
-.section-title {
-  text-align: center;
-  font-size: 2rem; /* Larger title */
-  color: #333;
-  margin-bottom: 40px; /* Increased margin for better spacing */
+  width: 100%;
 }
 
 .work-item {
   display: flex;
-  align-items: flex-start; /* Align items to the top */
-  justify-content: space-around;
-  gap:50px; /* More spacing between content and image */
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .Content {
   display: flex;
-  align-items: flex-start;
-  gap: 20px; 
-  flex: 1 ;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  width: 100%;
 }
 
 .icon-container .circle {
-  position: relative;
-  width: 100px; /* Slightly larger size */
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background: linear-gradient(145deg, #a75dc9, #b394c1, #b9b0bd);
-  border-radius: 50%; 
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  position: relative;
 }
 
 .icon-container .circle::before {
   content: '';
   position: absolute;
-  width: 60px; /* Slightly larger inner circle */
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background: white;
   border-radius: 50%;
-  z-index: 1;
 }
 
 .number {
   position: relative;
   z-index: 2;
-  font-size: 1.5rem; /* Larger number font */
-  color: black;
+  font-size: 1.5rem;
+  color: #333;
   font-weight: bold;
 }
 
+.text-content {
+  max-width: 600px;
+}
+
 .text-content h3 {
-  font-size: 1.4rem; /* Larger text */
+  font-size: 1.5rem;
   color: #333;
-  margin-bottom: 10px; /* Increased margin for better spacing */
+  margin-bottom: 1rem;
 }
 
 .text-content p {
-  font-size: 1.1rem; /* Slightly larger paragraph text */
-  color: #555;
-  line-height: 1.6; /* Improved readability */
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
 }
 
 .image-container {
-  flex: 1;
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .dashboard-image {
-  max-width: 90%; /* Slightly smaller width for proper alignment */
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Increased shadow for more emphasis */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 768px) {
+  .work-item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .Content {
+    flex: 1;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .image-container {
+    flex: 1;
+  }
+
+  .dashboard-image {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .how-it-works {
+    padding: 2rem 1rem;
+  }
+
+  .text-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+  }
+
+  .icon-container .circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon-container .circle::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .number {
+    font-size: 1.2rem;
+  }
 }
 
