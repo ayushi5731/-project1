@@ -1,6 +1,7 @@
-.wheel-image{
-  height:600px;
-  width:80%;
-  margin:auto;
-  
+.wheel-image {
+  height: 600px;
+  width: 80%;
+  margin: auto;
+  object-fit: cover; 
+  max-width: 100%;
 }

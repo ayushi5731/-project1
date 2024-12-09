@@ -31,3 +31,35 @@
     color: #666;
   }
   
+
+  @media (max-width: 768px) {
+    .outer {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      gap: 15px; /* Add a gap between stacked items */
+    }
+  
+    .inner {
+      height: 150px; /* Slightly reduce the height for mobile */
+      width: 180px; /* Slightly reduce the width for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .outer {
+      flex-direction: column; /* Ensure vertical stacking on small screens */
+      gap: 10px; /* Further reduce gap for mobile screens */
+    }
+  
+    .inner {
+      height: 120px; /* Smaller height for mobile */
+      width: 160px; /* Smaller width for mobile */
+    }
+  
+    h5 {
+      font-size: 1rem; /* Slightly smaller font size for mobile */
+    }
+  
+    p {
+      font-size: 0.8rem; /* Adjust paragraph font size for mobile */
+    }
+  }

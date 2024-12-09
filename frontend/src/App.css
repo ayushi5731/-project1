@@ -1,5 +1,4 @@
 /* App.css */
-
 .App {
   display: flex;
   flex-direction: column;
@@ -11,7 +10,7 @@
 section {
   padding: 20px;
   margin: 10px 0;
-  height: 100vh; /* Each section will take up full height of the viewport */
+  min-height: 100vh; /* Each section will take up at least full height of the viewport */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,12 +21,14 @@ section {
   background-color: #f4f4f4; /* Light gray background */
   border: 1px solid #ccc;
   box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
 }
 
 /* Wheel section */
 .wheel-container {
   position: relative;
-  width: 100%;
+  width: 80%; /* Adjust width for responsiveness */
   height: 500px; 
   margin: auto;
   display: flex;
@@ -35,6 +36,8 @@ section {
   align-items: center;
   background: linear-gradient(to right, #E6E6E6, #d4d3d3, #B6BCC8);
   border-radius: 20px; 
+  overflow: hidden; /* Prevents wheel from overflowing */
+  z-index: 1;
 }
 
 .center-image {
@@ -44,6 +47,7 @@ section {
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
 .center-img {
@@ -65,6 +69,7 @@ section {
   justify-content: center;
   background: linear-gradient(135deg, #6a82fb, #fc5c7d);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
 .segment h3 {
@@ -102,50 +107,61 @@ section {
 }
 
 /* Additional sections styles */
-.Hero {
-  background-color: #ff6347;
-}
-
-.Medical {
-  background-color: #ffa500;
-}
-
-.Product {
-  background-color: #f0e68c;
-}
-
-.Wheel {
-  background-color: #98fb98;
-}
-
-.Solutions {
-  background-color: #add8e6;
-}
-
-.Accuracy {
-  background-color: #f0f8ff;
-}
-
-.Aiworks {
-  background-color: #d3d3d3;
-}
-
-.Section1 {
-  background-color: #ffb6c1;
-}
-
-.Section2 {
-  background-color: #ffe4e1;
-}
-
-.Section3 {
-  background-color: #ffdab9;
-}
-
-.Contact {
-  background-color: #fffacd;
-}
+.Hero { background-color: #ff6347; }
+.Medical { background-color: #ffa500; }
+.Product { background-color: #f0e68c; }
+.Wheel { background-color: #98fb98; }
+.Solutions { background-color: #add8e6; }
+.Accuracy { background-color: #f0f8ff; }
+.Aiworks { background-color: #d3d3d3; }
+.Section1 { background-color: #ffb6c1; }
+.Section2 { background-color: #ffe4e1; }
+.Section3 { background-color: #ffdab9; }
+.Contact { background-color: #fffacd; }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .wheel-container {
+    height: 400px;
+    width: 90%;
+  }
+  
+  .segment {
+    width: 120px;
+    height: 100px;
+  }
+  
+  .center-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  section {
+    min-height: 80vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .wheel-container {
+    height: 300px;
+    width: 90%;
+  }
+  
+  .segment {
+    width: 100px;
+    height: 80px;
+  }
+
+  .center-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  section {
+    min-height: 70vh;
+  }
 }

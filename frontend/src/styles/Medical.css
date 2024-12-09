@@ -1,10 +1,9 @@
-/* General Styles for Medical Section */
 .medical-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 40px 20px;
-  background: linear-gradient(to right, #E6E6E6, #d4d3d3, #B6BCC8);
+  background: linear-gradient(to right, #e6e6e6, #d4d3d3, #b6bcc8);
   border-radius: 10px;
   padding-left: 30px;
 }
@@ -52,70 +51,65 @@
   margin-right: 40px;
 }
 
-
 @media (max-width: 768px) {
   .medical-section {
-    flex-direction: column; 
-    padding: 30px 15px; 
-    text-wrap:wrap;
+    flex-direction: column;
+    padding: 30px 15px;
+    text-wrap: wrap;
   }
 
   .medical-content {
-    max-width: 70%; 
-    margin-left: 0; 
-    text-align: justify; 
+    max-width: 70%;
+    margin-left: 0;
+    text-align: justify;
   }
 
   .medical-content h1 {
-    font-size: 1.6rem; 
-    margin-left: 0; 
+    font-size: 1.6rem;
+    margin-left: 0;
     text-align: center;
   }
 
   .medical-content p {
-    font-size: 0.95rem; 
-    margin-left: 0; 
+    font-size: 0.95rem;
+    margin-left: 0;
   }
 
   .cta-button {
-    margin-left: 100px; 
-    width: 20%; 
-    padding: 12px 50px; 
     margin-left: 40%;
-    
+    width: 20%;
+    padding: 12px 50px;
   }
 
   .medical-image img {
-    
-    height: auto; 
-    margin-right: 0; 
+    height: auto;
+    margin-right: 0;
     max-width: 500px;
-    margin-top:40px;
+    margin-top: 40px;
     border-top-right-radius: 0px;
   }
 }
 
-
 @media (max-width: 480px) {
   .medical-section {
-    padding: 20px 10px; 
+    padding: 20px 10px;
   }
 
   .medical-content h1 {
-    font-size: 1.4rem; 
+    font-size: 1.4rem;
   }
 
   .medical-content p {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
   }
 
   .cta-button {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
     padding: 10px 20px;
   }
 
   .medical-image img {
-    max-width: 90%; 
-    height: auto; 
+    max-width: 90%;
+    height: auto;
   }
 }
